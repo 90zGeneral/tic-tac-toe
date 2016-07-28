@@ -23,6 +23,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1F-yW-cth">
                                 <rect key="frame" x="125" y="219" width="70" height="77"/>
                                 <state key="normal" image="tic-tac-toe-x"/>
+                                <connections>
+                                    <action selector="slot5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dh-5p-Xgx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1O-UN-lgF">
+                                <rect key="frame" x="125" y="308" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-o"/>
+                                <connections>
+                                    <action selector="slot8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jko-X8-qZR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCs-AU-cSS">
                                 <rect key="frame" x="20" y="28" width="280" height="53"/>
@@ -44,9 +54,54 @@
                                     <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16r-ko-hLe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1O-UN-lgF">
-                                <rect key="frame" x="125" y="308" width="70" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-ER-6mw">
+                                <rect key="frame" x="45" y="130" width="70" height="77"/>
                                 <state key="normal" image="tic-tac-toe-o"/>
+                                <connections>
+                                    <action selector="slot1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hY6-op-sqz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3l-RZ-hb0">
+                                <rect key="frame" x="204" y="130" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-o"/>
+                                <connections>
+                                    <action selector="slot3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsU-Jk-AMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5X-mE-bTK">
+                                <rect key="frame" x="204" y="219" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-o"/>
+                                <connections>
+                                    <action selector="slot6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5m-cR-meg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-N5-uHd">
+                                <rect key="frame" x="204" y="308" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-x"/>
+                                <connections>
+                                    <action selector="slot9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qlV-13-jTV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-sX-5Hh">
+                                <rect key="frame" x="45" y="308" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-o"/>
+                                <connections>
+                                    <action selector="slot7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4U-7x-5WX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-Ha-EuX">
+                                <rect key="frame" x="45" y="219" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-x"/>
+                                <connections>
+                                    <action selector="slot4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJk-BW-oN8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-aR-Zoo">
+                                <rect key="frame" x="125" y="130" width="70" height="77"/>
+                                <state key="normal" image="tic-tac-toe-x"/>
+                                <connections>
+                                    <action selector="slot2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i10-ay-CvV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
