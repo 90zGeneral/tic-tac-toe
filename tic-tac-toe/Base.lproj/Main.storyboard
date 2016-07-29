@@ -109,6 +109,15 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="resultsLabel" destination="T9f-Uj-9Cq" id="z6L-UW-JRa"/>
+                        <outlet property="slot1Label" destination="j1h-ER-6mw" id="wkY-bW-N2S"/>
+                        <outlet property="slot2Label" destination="DTH-aR-Zoo" id="Da1-cD-JPB"/>
+                        <outlet property="slot3Label" destination="z3l-RZ-hb0" id="W3N-sG-tY7"/>
+                        <outlet property="slot4Label" destination="Uf6-Ha-EuX" id="yRI-9W-zXZ"/>
+                        <outlet property="slot5Label" destination="U1F-yW-cth" id="MxM-Rc-ClK"/>
+                        <outlet property="slot6Label" destination="m5X-mE-bTK" id="0nG-uX-18D"/>
+                        <outlet property="slot7Label" destination="gcE-sX-5Hh" id="hLj-Fy-hdZ"/>
+                        <outlet property="slot8Label" destination="Z1O-UN-lgF" id="yxr-5D-Bcr"/>
+                        <outlet property="slot9Label" destination="uL3-N5-uHd" id="e5P-5h-Kpa"/>
                         <outlet property="startReset" destination="4Bl-UU-MIs" id="rfw-f3-ox2"/>
                     </connections>
                 </viewController>
