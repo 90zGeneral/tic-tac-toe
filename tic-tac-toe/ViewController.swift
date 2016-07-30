@@ -10,64 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //To determine whose turn it is. 1 = x, 2 = o
+    var currentPlayer = 1
+    
     //To determine when a winner should be label
     let winningCombos = []
     
     @IBOutlet var resultsLabel: UILabel!
     @IBOutlet var startReset: UIButton!
     
-    //To control the image display of each slot on board
-    @IBOutlet var slot1Label: UIButton!
-    @IBOutlet var slot2Label: UIButton!
-    @IBOutlet var slot3Label: UIButton!
-    @IBOutlet var slot4Label: UIButton!
-    @IBOutlet var slot5Label: UIButton!
-    @IBOutlet var slot6Label: UIButton!
-    @IBOutlet var slot7Label: UIButton!
-    @IBOutlet var slot8Label: UIButton!
-    @IBOutlet var slot9Label: UIButton!
+    //This will represent all image changes with the buttons
+    @IBOutlet var buttonLabel: UIButton!
+    
+    //To control all 9 button press by linking them all to this method
+    @IBAction func buttonPress(sender: AnyObject) {
+        
+        //To interchange between x's and o's upon button click
+        if currentPlayer == 1 {
+            
+            sender.setImage(UIImage(named: "tic-tac-toe-x"), forState: .Normal)
+            currentPlayer = 2
+        }else {
+            sender.setImage(UIImage(named: "tic-tac-toe-o"), forState: .Normal)
+            currentPlayer = 1
+        }
+    }
     
     //To control the the game operations
     @IBAction func startGame(sender: AnyObject) {
         
         resultsLabel.text = ""
         
-    }
-    
-    //The button control for slot 1
-    @IBAction func slot1(sender: AnyObject) {
-    }
-    
-    //The button control for slot 2
-    @IBAction func slot2(sender: AnyObject) {
-    }
-    
-    //The button control for slot 3
-    @IBAction func slot3(sender: AnyObject) {
-    }
-    
-    //The button control for slot 4
-    @IBAction func slot4(sender: AnyObject) {
-    }
-    
-    //The button control for slot 5
-    @IBAction func slot5(sender: AnyObject) {
-    }
-    
-    //The button control for slot 6
-    @IBAction func slot6(sender: AnyObject) {
-    }
-    
-    //The button control for slot 7
-    @IBAction func slot7(sender: AnyObject) {
-    }
-    
-    //The button control for slot 8
-    @IBAction func slot8(sender: AnyObject) {
-    }
-    
-    //The button control for slot 9
-    @IBAction func slot9(sender: AnyObject) {
     }
     
     override func viewDidLoad() {

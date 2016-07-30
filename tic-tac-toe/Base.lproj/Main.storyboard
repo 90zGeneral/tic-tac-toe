@@ -22,16 +22,14 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1F-yW-cth">
                                 <rect key="frame" x="125" y="219" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-x"/>
                                 <connections>
-                                    <action selector="slot5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dh-5p-Xgx"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQl-kH-7DQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1O-UN-lgF">
                                 <rect key="frame" x="125" y="308" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-o"/>
                                 <connections>
-                                    <action selector="slot8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jko-X8-qZR"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxE-Dm-09T"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCs-AU-cSS">
@@ -56,51 +54,44 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-ER-6mw">
                                 <rect key="frame" x="45" y="130" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-o"/>
                                 <connections>
-                                    <action selector="slot1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hY6-op-sqz"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsU-j4-6gF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3l-RZ-hb0">
-                                <rect key="frame" x="204" y="130" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-o"/>
+                                <rect key="frame" x="204" y="130" width="71" height="77"/>
                                 <connections>
-                                    <action selector="slot3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsU-Jk-AMf"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mR-Dc-qgc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5X-mE-bTK">
                                 <rect key="frame" x="204" y="219" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-o"/>
                                 <connections>
-                                    <action selector="slot6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5m-cR-meg"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKU-mi-9d7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-N5-uHd">
                                 <rect key="frame" x="204" y="308" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-x"/>
                                 <connections>
-                                    <action selector="slot9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qlV-13-jTV"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQ9-8n-O7B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-sX-5Hh">
                                 <rect key="frame" x="45" y="308" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-o"/>
                                 <connections>
-                                    <action selector="slot7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4U-7x-5WX"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbi-vo-xFh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-Ha-EuX">
                                 <rect key="frame" x="45" y="219" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-x"/>
                                 <connections>
-                                    <action selector="slot4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJk-BW-oN8"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyv-eP-ziK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-aR-Zoo">
                                 <rect key="frame" x="125" y="130" width="70" height="77"/>
-                                <state key="normal" image="tic-tac-toe-x"/>
                                 <connections>
-                                    <action selector="slot2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i10-ay-CvV"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQb-6Y-orS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,16 +99,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="buttonLabel" destination="j1h-ER-6mw" id="GeS-sT-Jtq"/>
                         <outlet property="resultsLabel" destination="T9f-Uj-9Cq" id="z6L-UW-JRa"/>
-                        <outlet property="slot1Label" destination="j1h-ER-6mw" id="wkY-bW-N2S"/>
-                        <outlet property="slot2Label" destination="DTH-aR-Zoo" id="Da1-cD-JPB"/>
-                        <outlet property="slot3Label" destination="z3l-RZ-hb0" id="W3N-sG-tY7"/>
-                        <outlet property="slot4Label" destination="Uf6-Ha-EuX" id="yRI-9W-zXZ"/>
-                        <outlet property="slot5Label" destination="U1F-yW-cth" id="MxM-Rc-ClK"/>
-                        <outlet property="slot6Label" destination="m5X-mE-bTK" id="0nG-uX-18D"/>
-                        <outlet property="slot7Label" destination="gcE-sX-5Hh" id="hLj-Fy-hdZ"/>
-                        <outlet property="slot8Label" destination="Z1O-UN-lgF" id="yxr-5D-Bcr"/>
-                        <outlet property="slot9Label" destination="uL3-N5-uHd" id="e5P-5h-Kpa"/>
                         <outlet property="startReset" destination="4Bl-UU-MIs" id="rfw-f3-ox2"/>
                     </connections>
                 </viewController>
@@ -128,7 +111,5 @@
     </scenes>
     <resources>
         <image name="tic-tac-toe- board" width="200" height="200"/>
-        <image name="tic-tac-toe-o" width="100" height="100"/>
-        <image name="tic-tac-toe-x" width="177" height="166"/>
     </resources>
 </document>
