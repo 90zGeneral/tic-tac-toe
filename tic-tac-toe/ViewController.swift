@@ -13,8 +13,14 @@ class ViewController: UIViewController {
     //To determine whose turn it is. 1 = x, 2 = o
     var currentPlayer = 1
     
-    //To determine when a winner should be label
-    let winningCombos = []
+    //To prevent any override btw x and o
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
+    //To determine when a winner should be labeled
+    let winningCombos = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
+                         [1, 4, 7], [2, 5, 8], [3, 6, 9],
+                         [1, 5, 9], [3, 5, 7]
+                        ]
     
     @IBOutlet var resultsLabel: UILabel!
     @IBOutlet var startReset: UIButton!
@@ -25,14 +31,18 @@ class ViewController: UIViewController {
     //To control all 9 button press by linking them all to this method
     @IBAction func buttonPress(sender: AnyObject) {
         
-        //To interchange between x's and o's upon button click
-        if currentPlayer == 1 {
+        //Check if an x or o image should be placed based on current board state without overriding each other
+        if gameState[sender.tag] == 0 {
+            gameState[sender.tag] = currentPlayer
             
-            sender.setImage(UIImage(named: "tic-tac-toe-x"), forState: .Normal)
-            currentPlayer = 2
-        }else {
-            sender.setImage(UIImage(named: "tic-tac-toe-o"), forState: .Normal)
-            currentPlayer = 1
+            //To switch turn btw players
+            if currentPlayer == 1 {
+                sender.setImage(UIImage(named: "tic-tac-toe-x"), forState: .Normal)
+                currentPlayer = 2
+            }else {
+                sender.setImage(UIImage(named: "tic-tac-toe-o"), forState: .Normal)
+                currentPlayer = 1
+            }
         }
     }
     
