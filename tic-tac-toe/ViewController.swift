@@ -37,10 +37,10 @@ class ViewController: UIViewController {
             
             //To switch turn btw players
             if currentPlayer == 1 {
-                sender.setImage(UIImage(named: "tic-tac-toe-x"), forState: .Normal)
+                sender.setImage(UIImage(named: "tic-tac-toe-x copy"), forState: .Normal)
                 currentPlayer = 2
             }else {
-                sender.setImage(UIImage(named: "tic-tac-toe-o"), forState: .Normal)
+                sender.setImage(UIImage(named: "tic-tac-toe-o copy"), forState: .Normal)
                 currentPlayer = 1
             }
         }
