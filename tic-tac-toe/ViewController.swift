@@ -25,6 +25,8 @@ class ViewController: UIViewController {
                          [0, 4, 8], [2, 4, 6]
                         ]
     
+    var gameActive = false
+    
     @IBOutlet var resultsLabel: UILabel!
     @IBOutlet var startReset: UIButton!
     
@@ -58,14 +60,25 @@ class ViewController: UIViewController {
                         // Identifying a Winner
                         if gameState[comboSet[0]] == 1 {
                             resultsLabel.text = "X Wins!!"
-                        } else {
+                            gameActive = false
+                            startReset.hidden = false
+                            startReset.setTitle("Retry", forState: .Normal)
+                        }else {
                             resultsLabel.text = "O Wins!!"
+                            gameActive = false
+                            startReset.hidden = false
+                            startReset.setTitle("Retry", forState: .Normal)
                         }
 
-                        // Let's highlight the winning buttons by looping thru the buttonCollection.
+                        // Let's highlight the winning buttons by looping thru the buttonCollection and dimming the others.
                         for button in buttonCollection {
                             if comboSet.contains(button.tag) == false {
-                                button.alpha = 0.3
+                                button.alpha = 0.2
+                                
+                                //Disable all the unfilled button slots on the game board
+                                if gameState[button.tag] == 0 {
+                                    button.enabled = false
+                                }
                             }
                         }
 
@@ -77,26 +90,50 @@ class ViewController: UIViewController {
                     }
                 }
             }
-            
-            totalClick += 1
-            
-            //Determining when the game ends in a tie
-            if totalClick == 9 && resultsLabel.text != "X Wins!!" && resultsLabel.text != "O Wins!!" {
-                resultsLabel.text = "DRAW!!"
-            }
+        }
+        
+        totalClick += 1
+        
+        //Determining when the game ends in a tie
+        if totalClick == 9 && resultsLabel.text != "X Wins!!" && resultsLabel.text != "O Wins!!" {
+            resultsLabel.hidden = false
+            resultsLabel.text = "DRAW!!"
+            gameActive = false
+            startReset.hidden = false
+            startReset.setTitle("Retry", forState: .Normal)
         }
     }
     
     //To control the the game operations
     @IBAction func startGame(sender: AnyObject) {
         
+        if gameActive == false {
+            for button in buttonCollection {
+                button.enabled = true
+                button.alpha = 1
+                button.setImage(nil, forState: .Normal)
+                for num in 0...gameState.count - 1 {
+                    gameState[num] = 0
+                }
+            }
+            
+            gameActive = true
+        }
+        
         resultsLabel.text = ""
+        startReset.hidden = true
+        currentPlayer = 1
+        totalClick = 0
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for button in buttonCollection {
+            button.enabled = false
+        }
         
         //To hide the label off the screen
         resultsLabel.hidden = true
